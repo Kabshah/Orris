@@ -1,0 +1,21 @@
+poetry config virtualenvs.in-project true
+
+poetry env remove python
+
+poetry install --no-root
+
+poetry env info
+
+.venv\Scripts\activate
+poetry run python -c "import requests, bs4, langchain, crewai, streamlit, faiss, yagmail; print('✅ All good!')"
+
+poetry add google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+poetry add crewai-tools
+poetry add elevenlabs
+
+poetry run python blog_summarizer.py
+poetry run python app.py
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requiremts.txt

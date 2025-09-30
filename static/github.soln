@@ -1,0 +1,18 @@
+
+from crewai import LLM
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+hf_llm = LLM(
+    #model="huggingface/meta-llama/Llama-3.1-8B-Instruct",
+    model="huggingface/meta-llama/Llama-3.1-8B-Instruct",  # sirf repo id
+    provider="huggingface"
+
+)
+
+response = hf_llm.call("Hey, who owns you?")
+
+# print(
+#     "\n[ 🤖 Response ]\n\n"
+#     f"{response.strip()}\n")

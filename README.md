@@ -4,6 +4,11 @@ Orris is a cutting-edge AI-powered web application that transforms any **blog, a
 Leveraging the power of **CrewAI multi-agent systems**, it automatically processes content and generates realistic voiceovers using **ElevenLabs**.  
 
 
+# Demo
+
+https://github.com/user-attachments/assets/7cac997c-df26-4b17-b330-ff92bdac4a92
+
+
 ## Features  
 
 ### 🎯 Core Functionality  
@@ -60,6 +65,5 @@ CREWAI_TRACING_ENABLED=true
 - Assist visually impaired users in consuming written content  
 
 # UI Preview
-
 
 ![alt text](static/demo.png)

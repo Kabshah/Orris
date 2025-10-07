@@ -1,26 +1,3 @@
-# import requests
-# from dotenv import load_dotenv
-# load_dotenv()
-# import os
-
-# url = "https://api.scrapingdog.com/google"
-
-# params = {
-#     "api_key": os.getenv("SCRAPINGDOG_API_KEY"),
-#     "results": 10,
-#     "country": "us",
-#     "advance_search": "true",
-#     "domain": "google.com"
-#   }
-
-# response = requests.get(url, params=params)
-
-# if response.status_code == 200:
-#       data = response.json()
-#       print(data)
-# else:
-#       print(f"Request failed with status code: {response.status_code}")
-
 import os
 from dotenv import load_dotenv
 from crewai.tools import BaseTool
